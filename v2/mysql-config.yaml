@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+  namespace: backends
+data:
+  host: mysql-service.databases.svc.cluster.local
+  database: opar
+  port: "3306"
