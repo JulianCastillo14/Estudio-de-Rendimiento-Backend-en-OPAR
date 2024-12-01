@@ -1,0 +1,28 @@
+version: '1.0'
+services:
+  db-opar:
+    image: mysql:9.1
+    environment:
+      MYSQL_DB_USERNAME: root
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: opar
+    volumes:
+      - db-data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+  backend-opar:
+    image: juliancastillo14/opar-backend:v2
+    depends_on:
+      - db-opar
+    environment:
+      MYSQL_DB_USERNAME: root
+      MYSQL_DB_PASSWORD: password
+      MYSQL_DATABASE: opar
+      MYSQL_DB_HOST: db-opar
+      MYSQL_DB_PORT: 3306
+    ports:
+      - "8081:8081"
+    links:
+      - db-opar
+volumes:
+  db-data:
