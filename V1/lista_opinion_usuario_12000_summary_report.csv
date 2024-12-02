@@ -1,3 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
 1733091237920,488,Obtener Opinion por Usuario,200,,Thread Group 1-8,,true,,210,250,1134,1134,http://127.0.0.1:8081/api/opiniones/usuario,488,0,0
 1733091237922,485,Obtener Opinion por Usuario,200,,Thread Group 1-9,,true,,210,250,1134,1134,http://127.0.0.1:8081/api/opiniones/usuario,485,0,1
 1733091237941,466,Obtener Opinion por Usuario,200,,Thread Group 1-35,,true,,210,250,1134,1134,http://127.0.0.1:8081/api/opiniones/usuario,466,0,1

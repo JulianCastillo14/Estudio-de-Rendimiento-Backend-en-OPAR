@@ -1,3 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
 1733091472892,96,Añadir Opinion,200,,Thread Group 1-3,text,true,,660,375,59,59,http://127.0.0.1:8081/api/opiniones/agregar,96,0,1
 1733091472891,106,Añadir Opinion,200,,Thread Group 1-4,text,true,,660,375,60,60,http://127.0.0.1:8081/api/opiniones/agregar,106,0,2
 1733091472892,105,Añadir Opinion,200,,Thread Group 1-9,text,true,,660,375,60,60,http://127.0.0.1:8081/api/opiniones/agregar,105,0,1
